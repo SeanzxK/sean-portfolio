@@ -32,7 +32,7 @@ const projects = [
 ]
 
 export const ProjectsSection = () => {
-    return <section id="projects" className="py-24 px-24 relative">
+    return <section id="projects" className="py-24 px-4 relative bg-secondary/30">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-10">
                      <div className="flex flex-wrap justify-center gap-x-3 md:gap-x-4">
