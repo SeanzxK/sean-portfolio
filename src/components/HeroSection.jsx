@@ -15,7 +15,7 @@ export const HeroSection = () => {
                                 
                                 {/* Bingkai & Foto */}
                                 <img 
-                                    src="src/assets/profil.png" // Ganti dengan path foto kamu
+                                    src="/profil.png" // Ganti dengan path foto kamu
                                     alt="Sean Lucky Khosasih"
                                     className="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-background shadow-2xl object-top"
                                 />

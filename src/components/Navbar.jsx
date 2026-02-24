@@ -35,7 +35,7 @@ export const Navbar = () => {
         <div className="container flex items-center justify-between">
             <a className="text-xl font-bold text-primary flex items-center gap-2" href="#hero">
                 <img 
-                    src="src/assets/logo.png" 
+                    src="/logo.png" 
                     alt="Logo"
                     className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover border border-white/20 transition-transform duration-300 group-hover:scale-110" 
                 />
