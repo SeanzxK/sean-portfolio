@@ -14,16 +14,29 @@ export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
     useEffect(() => {
-        const handleScroll = () => {
+        const handleResizeAndScroll = () => {
             setIsScrolled(window.scrollY > 10);
+
+            if (window.innerWidth < 768) {
+                document.documentElement.classList.add("dark");
+            } else {
+
+            }
         };
 
-        window.addEventListener("scroll", handleScroll);
+        handleResizeAndScroll();
+
+        window.addEventListener("scroll", handleScroll); 
+        window.addEventListener("resize", handleResizeAndScroll);
+
+        function handleScroll() {
+            setIsScrolled(window.scrollY > 10);
+        }
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResizeAndScroll);
         };
     }, []);
 
